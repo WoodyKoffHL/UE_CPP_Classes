@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CppTPS.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{D9A0AB14-A2BA-4382-9D52-F0129E22B57C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CppTPS.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CppTPSEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{36E30A12-4B67-4BB7-8160-0361E8E32245}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{435E8EC3-7A9D-4092-A2D5-1E58D12877F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\WoodyQuests">
+      <UniqueIdentifier>{33D7847B-2113-4947-9562-C0A0ECFDE835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\WoodyQuests\Source">
+      <UniqueIdentifier>{14804F13-461E-46E6-8CEF-C4A1F09E4539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\WoodyQuests\Source\WoodyQuests">
+      <UniqueIdentifier>{D3CDAEBF-4836-41FE-81B1-1DDBDBEAF790}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\WoodyQuests\Source\WoodyQuests\WoodyQuests.Build.cs">
+      <Filter>Plugins\WoodyQuests\Source\WoodyQuests</Filter>
+    </None>
+    <Filter Include="Plugins\WoodyQuests\Source\WoodyQuests\Private">
+      <UniqueIdentifier>{F1728111-8B8F-4D36-B1F2-041A6AF9CFB9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\WoodyQuests\Source\WoodyQuests\Private\QuestComponent.cpp">
+      <Filter>Plugins\WoodyQuests\Source\WoodyQuests\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\WoodyQuests\Source\WoodyQuests\Private\QuestCondition.cpp">
+      <Filter>Plugins\WoodyQuests\Source\WoodyQuests\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\WoodyQuests\Source\WoodyQuests\Private\WoodyQuests.cpp">
+      <Filter>Plugins\WoodyQuests\Source\WoodyQuests\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\WoodyQuests\Source\WoodyQuests\Public">
+      <UniqueIdentifier>{6A813CB8-71C4-4D7D-B2DC-F97A02F613FF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\WoodyQuests\Source\WoodyQuests\Public\QuestComponent.h">
+      <Filter>Plugins\WoodyQuests\Source\WoodyQuests\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\WoodyQuests\Source\WoodyQuests\Public\QuestCondition.h">
+      <Filter>Plugins\WoodyQuests\Source\WoodyQuests\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\WoodyQuests\Source\WoodyQuests\Public\WoodyQuests.h">
+      <Filter>Plugins\WoodyQuests\Source\WoodyQuests\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\WoodyQuests\WoodyQuests.uplugin">
+      <Filter>Plugins\WoodyQuests</Filter>
+    </None>
+    <Filter Include="Plugins\WoodyQuests\Resources">
+      <UniqueIdentifier>{8B29D388-4F3C-4B02-B5D9-41A2B4A2B536}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\WoodyQuests\Resources\Icon128.png">
+      <Filter>Plugins\WoodyQuests\Resources</Filter>
+    </None>
+    <Filter Include="Source\CppTPS">
+      <UniqueIdentifier>{FCEDEC50-C1B0-4229-A3D3-450E373B7437}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CppTPS\CppLifeSystem.cpp">
+      <Filter>Source\CppTPS</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppTPS\CppLifeSystem.h">
+      <Filter>Source\CppTPS</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\CppTPS\CppTPS.Build.cs">
+      <Filter>Source\CppTPS</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CppTPS\CppTPS.cpp">
+      <Filter>Source\CppTPS</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppTPS\CppTPS.h">
+      <Filter>Source\CppTPS</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CppTPS\CppTPSCharacter.cpp">
+      <Filter>Source\CppTPS</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppTPS\CppTPSCharacter.h">
+      <Filter>Source\CppTPS</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CppTPS\CppTPSGameMode.cpp">
+      <Filter>Source\CppTPS</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppTPS\CppTPSGameMode.h">
+      <Filter>Source\CppTPS</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\Definitions.CppTPS.h
+R:\Port\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+R:\Port\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Source\CppTPS/CppLifeSystem.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Inc\CppTPS\CppLifeSystem.generated.h

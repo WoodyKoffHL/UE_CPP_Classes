@@ -1,0 +1,2 @@
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Definitions.WoodyQuests.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Source\WoodyQuests\Public\WoodyQuests.h

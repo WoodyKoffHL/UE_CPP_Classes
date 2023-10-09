@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Woody Quests",
+	"Description": "Quest System fot any projects",
+	"Category": "Other",
+	"CreatedBy": "Woodykoff",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "WoodyQuests",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

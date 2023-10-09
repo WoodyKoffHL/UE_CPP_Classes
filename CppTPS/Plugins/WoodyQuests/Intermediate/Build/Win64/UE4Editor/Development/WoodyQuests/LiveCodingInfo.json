@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.WoodyQuests.cpp.obj": [
+			"QuestComponent.cpp.obj",
+			"QuestCondition.cpp.obj",
+			"WoodyQuests.cpp.obj"
+		],
+		"Module.WoodyQuests.gen.cpp.obj": [
+			"QuestComponent.gen.cpp.obj",
+			"QuestCondition.gen.cpp.obj",
+			"WoodyQuests.init.gen.cpp.obj"
+		]
+	}
+}

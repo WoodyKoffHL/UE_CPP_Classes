@@ -1,0 +1,13 @@
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Definitions.WoodyQuests.h
+C:/Users/s.dronskiy/Documents/Unreal Projects/CppTPS/Plugins/WoodyQuests/Intermediate/Build/Win64/UE4Editor/Inc/WoodyQuests/QuestComponent.gen.cpp
+R:\Port\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+R:\Port\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Source\WoodyQuests/Public/QuestComponent.h
+R:\Port\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/Datatable.h
+R:\Port\UE_4.27\Engine\Source\Runtime\Engine\Public\DataTableUtils.h
+R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Source\WoodyQuests\Public\QuestCondition.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Inc\WoodyQuests\QuestCondition.generated.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Inc\WoodyQuests\QuestComponent.generated.h
+C:/Users/s.dronskiy/Documents/Unreal Projects/CppTPS/Plugins/WoodyQuests/Intermediate/Build/Win64/UE4Editor/Inc/WoodyQuests/QuestCondition.gen.cpp
+C:/Users/s.dronskiy/Documents/Unreal Projects/CppTPS/Plugins/WoodyQuests/Intermediate/Build/Win64/UE4Editor/Inc/WoodyQuests/WoodyQuests.init.gen.cpp

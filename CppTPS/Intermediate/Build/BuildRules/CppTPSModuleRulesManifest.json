@@ -1,0 +1,9 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\s.dronskiy\\Documents\\Unreal Projects\\CppTPS\\Source\\CppTPS\\CppTPS.Build.cs",
+		"C:\\Users\\s.dronskiy\\Documents\\Unreal Projects\\CppTPS\\Plugins\\WoodyQuests\\Source\\WoodyQuests\\WoodyQuests.Build.cs",
+		"C:\\Users\\s.dronskiy\\Documents\\Unreal Projects\\CppTPS\\Source\\CppTPS.Target.cs",
+		"C:\\Users\\s.dronskiy\\Documents\\Unreal Projects\\CppTPS\\Source\\CppTPSEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

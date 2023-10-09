@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CppTPS",
+			"Path": "C:\\Users\\s.dronskiy\\Documents\\Unreal Projects\\CppTPS\\Source\\CppTPS.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CppTPSEditor",
+			"Path": "C:\\Users\\s.dronskiy\\Documents\\Unreal Projects\\CppTPS\\Source\\CppTPSEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
