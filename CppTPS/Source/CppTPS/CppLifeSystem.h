@@ -17,7 +17,7 @@ enum class EDamageType : uint8 {
 	radiation
 };
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(Blueprintable, BlueprintType,ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class CPPTPS_API UCppLifeSystem : public UActorComponent
 {
 	GENERATED_BODY()
