@@ -7,6 +7,15 @@
 #include "CppLifeSystem.generated.h"
 
 
+UENUM(BlueprintType)
+enum class EDamageType : uint8 {
+	bite,
+	shot,
+	explosion,
+	fire,
+	radiation
+};
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class CPPTPS_API UCppLifeSystem : public UActorComponent
 {
@@ -24,6 +33,9 @@ public:
 
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
 	float Edurance = 0.0f; // Процент защиты
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float NuklearEdurance = 0.0f; // Процент защиты от радиации
 	
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
 	float Thirst = 0.0f; // Жажда
@@ -37,6 +49,9 @@ public:
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
 	bool Death = true; // Смерть
 
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	bool Tired = true; // Усталость, временная bool, отключается через 15 секунд
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -46,5 +61,16 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable)
-	void ApplyDamage(float Damage);
+	void ApplyDamage(float Damage, EDamageType Type);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void SetStatus();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void TickStatus(float DeltaTime);
+
+private:
+
+	
+
 };

@@ -13,18 +13,92 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 // Cross Module References
+	CPPTPS_API UEnum* Z_Construct_UEnum_CppTPS_EDamageType();
+	UPackage* Z_Construct_UPackage__Script_CppTPS();
 	CPPTPS_API UClass* Z_Construct_UClass_UCppLifeSystem_NoRegister();
 	CPPTPS_API UClass* Z_Construct_UClass_UCppLifeSystem();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
-	UPackage* Z_Construct_UPackage__Script_CppTPS();
 // End Cross Module References
+	static UEnum* EDamageType_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_CppTPS_EDamageType, Z_Construct_UPackage__Script_CppTPS(), TEXT("EDamageType"));
+		}
+		return Singleton;
+	}
+	template<> CPPTPS_API UEnum* StaticEnum<EDamageType>()
+	{
+		return EDamageType_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EDamageType(EDamageType_StaticEnum, TEXT("/Script/CppTPS"), TEXT("EDamageType"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_CppTPS_EDamageType_Hash() { return 3020959807U; }
+	UEnum* Z_Construct_UEnum_CppTPS_EDamageType()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_CppTPS();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EDamageType"), 0, Get_Z_Construct_UEnum_CppTPS_EDamageType_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EDamageType::bite", (int64)EDamageType::bite },
+				{ "EDamageType::shot", (int64)EDamageType::shot },
+				{ "EDamageType::explosion", (int64)EDamageType::explosion },
+				{ "EDamageType::fire", (int64)EDamageType::fire },
+				{ "EDamageType::radiation", (int64)EDamageType::radiation },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "bite.Name", "EDamageType::bite" },
+				{ "BlueprintType", "true" },
+				{ "explosion.Name", "EDamageType::explosion" },
+				{ "fire.Name", "EDamageType::fire" },
+				{ "ModuleRelativePath", "CppLifeSystem.h" },
+				{ "radiation.Name", "EDamageType::radiation" },
+				{ "shot.Name", "EDamageType::shot" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_CppTPS,
+				nullptr,
+				"EDamageType",
+				"EDamageType",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	DEFINE_FUNCTION(UCppLifeSystem::execApplyDamage)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_Damage);
+		P_GET_ENUM(EDamageType,Z_Param_Type);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->ApplyDamage(Z_Param_Damage);
+		P_THIS->ApplyDamage(Z_Param_Damage,EDamageType(Z_Param_Type));
 		P_NATIVE_END;
+	}
+	static FName NAME_UCppLifeSystem_SetStatus = FName(TEXT("SetStatus"));
+	void UCppLifeSystem::SetStatus()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UCppLifeSystem_SetStatus),NULL);
+	}
+	static FName NAME_UCppLifeSystem_TickStatus = FName(TEXT("TickStatus"));
+	void UCppLifeSystem::TickStatus(float DeltaTime)
+	{
+		CppLifeSystem_eventTickStatus_Parms Parms;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_UCppLifeSystem_TickStatus),&Parms);
 	}
 	void UCppLifeSystem::StaticRegisterNativesUCppLifeSystem()
 	{
@@ -39,8 +113,11 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 		struct CppLifeSystem_eventApplyDamage_Parms
 		{
 			float Damage;
+			EDamageType Type;
 		};
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Damage;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Type_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Type;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -48,8 +125,12 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(CppLifeSystem_eventApplyDamage_Parms, Damage), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::NewProp_Type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(CppLifeSystem_eventApplyDamage_Parms, Type), Z_Construct_UEnum_CppTPS_EDamageType, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::NewProp_Damage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::NewProp_Type_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::NewProp_Type,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::Function_MetaDataParams[] = {
@@ -63,6 +144,56 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UCppLifeSystem_ApplyDamage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UCppLifeSystem_SetStatus_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCppLifeSystem_SetStatus_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CppLifeSystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCppLifeSystem_SetStatus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCppLifeSystem, nullptr, "SetStatus", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCppLifeSystem_SetStatus_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCppLifeSystem_SetStatus_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UCppLifeSystem_SetStatus()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UCppLifeSystem_SetStatus_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DeltaTime;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::NewProp_DeltaTime = { "DeltaTime", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(CppLifeSystem_eventTickStatus_Parms, DeltaTime), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::NewProp_DeltaTime,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CppLifeSystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCppLifeSystem, nullptr, "TickStatus", nullptr, nullptr, sizeof(CppLifeSystem_eventTickStatus_Parms), Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UCppLifeSystem_TickStatus()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UCppLifeSystem_TickStatus_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -90,6 +221,10 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Edurance;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NuklearEdurance_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_NuklearEdurance;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Thirst_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Thirst;
@@ -106,6 +241,11 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 #endif
 		static void NewProp_Death_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Death;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Tired_MetaData[];
+#endif
+		static void NewProp_Tired_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Tired;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -115,7 +255,9 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CppTPS,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UCppLifeSystem_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UCppLifeSystem_ApplyDamage, "ApplyDamage" }, // 2177728862
+		{ &Z_Construct_UFunction_UCppLifeSystem_ApplyDamage, "ApplyDamage" }, // 1181933192
+		{ &Z_Construct_UFunction_UCppLifeSystem_SetStatus, "SetStatus" }, // 3151588590
+		{ &Z_Construct_UFunction_UCppLifeSystem_TickStatus, "TickStatus" }, // 281145544
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCppLifeSystem_Statics::Class_MetaDataParams[] = {
@@ -149,9 +291,17 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Edurance = { "Edurance", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCppLifeSystem, Edurance), METADATA_PARAMS(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Edurance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Edurance_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Thirst_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_NuklearEdurance_MetaData[] = {
 		{ "Category", "Stats" },
 		{ "Comment", "// ??????? ??????\n" },
+		{ "ModuleRelativePath", "CppLifeSystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_NuklearEdurance = { "NuklearEdurance", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UCppLifeSystem, NuklearEdurance), METADATA_PARAMS(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_NuklearEdurance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_NuklearEdurance_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Thirst_MetaData[] = {
+		{ "Category", "Stats" },
+		{ "Comment", "// ??????? ?????? ?? ????????\n" },
 		{ "ModuleRelativePath", "CppLifeSystem.h" },
 	};
 #endif
@@ -184,14 +334,28 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 		((UCppLifeSystem*)Obj)->Death = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Death = { "Death", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UCppLifeSystem), &Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Death_SetBit, METADATA_PARAMS(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Death_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Death_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Tired_MetaData[] = {
+		{ "Category", "Stats" },
+		{ "Comment", "// ??????\n" },
+		{ "ModuleRelativePath", "CppLifeSystem.h" },
+	};
+#endif
+	void Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Tired_SetBit(void* Obj)
+	{
+		((UCppLifeSystem*)Obj)->Tired = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Tired = { "Tired", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UCppLifeSystem), &Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Tired_SetBit, METADATA_PARAMS(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Tired_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Tired_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCppLifeSystem_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Health,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Vitality,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Edurance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_NuklearEdurance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Thirst,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Hunger,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Radiation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Death,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCppLifeSystem_Statics::NewProp_Tired,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UCppLifeSystem_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UCppLifeSystem>::IsAbstract,
@@ -220,7 +384,7 @@ void EmptyLinkFunctionForGeneratedCodeCppLifeSystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UCppLifeSystem, 2967842252);
+	IMPLEMENT_CLASS(UCppLifeSystem, 407375411);
 	template<> CPPTPS_API UClass* StaticClass<UCppLifeSystem>()
 	{
 		return UCppLifeSystem::StaticClass();

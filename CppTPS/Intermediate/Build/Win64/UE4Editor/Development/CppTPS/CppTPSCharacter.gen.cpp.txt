@@ -1,11 +1,11 @@
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\Definitions.CppTPS.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\Definitions.CppTPS.h
 R:\Port\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 R:\Port\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Source\CppTPS/CppTPSCharacter.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Source\CppTPS/CppTPSCharacter.h
 R:\Port\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 R:\Port\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
 R:\Port\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Inc\CppTPS\CppTPSCharacter.generated.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Inc\CppTPS\CppTPSCharacter.generated.h

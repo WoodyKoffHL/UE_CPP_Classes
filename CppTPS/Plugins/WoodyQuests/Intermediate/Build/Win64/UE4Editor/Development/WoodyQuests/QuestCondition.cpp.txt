@@ -1,5 +1,5 @@
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Definitions.h
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Source\WoodyQuests\Public\QuestCondition.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Definitions.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Plugins\WoodyQuests\Source\WoodyQuests\Public\QuestCondition.h
 R:\Port\UE_4.27\Engine\Source\Runtime\Core\Public\CoreMinimal.h
 R:\Port\UE_4.27\Engine\Source\Runtime\Core\Public\CoreTypes.h
 R:\Port\UE_4.27\Engine\Source\Runtime\Core\Public\HAL/Platform.h
@@ -501,4 +501,4 @@ R:\Port\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/MaterialMerging.h
 R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MaterialMerging.generated.h
 R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Level.generated.h
 R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Actor.generated.h
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Inc\WoodyQuests\QuestCondition.generated.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Inc\WoodyQuests\QuestCondition.generated.h

@@ -1,21 +1,12 @@
-﻿  Invalidating makefile for CppTPSEditor (CppLifeSystem.cpp.obj.response modified)
-  Parsing headers for CppTPSEditor
-    Running UnrealHeaderTool "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\CppTPS.uproject" "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\CppTPSEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\s.dronskiy\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  LogInit: Display: Loading text-based GConfig....
-  Reflection code generated for CppTPSEditor in 20,596746 seconds
-  Deleted hot-reload file: C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Binaries\Win64\UE4Editor-CppTPS-0494.dll
-  Deleted hot-reload file: C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Binaries\Win64\UE4Editor-CppTPS-0494.pdb
-  Deleted hot-reload file: C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS-0494.lib
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes).
   Building CppTPSEditor...
   Using Visual Studio 2022 14.37.32822 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 6 actions with 12 processes...
-    [1/6] CppTPS.init.gen.cpp
-    [2/6] CppLifeSystem.cpp
-    [3/6] CppLifeSystem.gen.cpp
-    [4/6] UE4Editor-CppTPS.lib
-       Создается библиотека C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.lib и объект C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.exp
-    [5/6] UE4Editor-CppTPS.dll
-       Создается библиотека C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.suppressed.lib и объект C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.suppressed.exp
-    [6/6] CppTPSEditor.target
-  Total time in Parallel executor: 58,20 seconds
-  Total execution time: 83,13 seconds
+  Building 4 actions with 12 processes...
+    [1/4] CppLifeSystem.cpp
+    [2/4] UE4Editor-CppTPS.lib
+       Создается библиотека C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.lib и объект C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.exp
+    [3/4] UE4Editor-CppTPS.dll
+       Создается библиотека C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.suppressed.lib и объект C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.suppressed.exp
+    [4/4] CppTPSEditor.target
+  Total time in Parallel executor: 2,36 seconds
+  Total execution time: 2,97 seconds

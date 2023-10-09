@@ -1,2 +1,2 @@
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\Definitions.CppTPS.h
-C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Source\CppTPS\CppTPS.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\Definitions.CppTPS.h
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Source\CppTPS\CppTPS.h

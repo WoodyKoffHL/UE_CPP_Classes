@@ -34,7 +34,8 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\WoodyQuests.cpp.obj"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Module.WoodyQuests.cpp.obj"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Module.WoodyQuests.gen.cpp.obj"
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Default.rc2.res"
 "R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "R:\Port\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"

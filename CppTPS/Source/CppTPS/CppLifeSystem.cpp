@@ -3,6 +3,7 @@
 
 #include "CppLifeSystem.h"
 
+
 // Sets default values for this component's properties
 UCppLifeSystem::UCppLifeSystem()
 {
@@ -18,8 +19,7 @@ UCppLifeSystem::UCppLifeSystem()
 void UCppLifeSystem::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
+	SetStatus();
 	
 }
 
@@ -28,11 +28,10 @@ void UCppLifeSystem::BeginPlay()
 void UCppLifeSystem::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+	TickStatus(DeltaTime);
 }
 
-void UCppLifeSystem::ApplyDamage(float Damage)
+void UCppLifeSystem::ApplyDamage(float Damage, EDamageType Type)
 {
 	if (Death) return;
 	if (Health - (Damage - (Damage * Edurance)) <= 0) {
@@ -40,7 +39,24 @@ void UCppLifeSystem::ApplyDamage(float Damage)
 		Death = true;
 	}
 	else {
-		Health = Health - (Damage - (Damage * Edurance));
+
+		switch (Type)
+			{
+		case EDamageType::bite:
+			Health = Health - (Damage - (Damage * Edurance));
+		case EDamageType::shot:
+			Health = Health - (Damage - (Damage * (Edurance / 2)));
+		case EDamageType::explosion:
+			Health = Health - Damage;
+		case EDamageType::fire:
+			Health = Health - (Damage - (Damage * Edurance / 3));
+		case EDamageType::radiation:
+			Health = Health - (Damage - (Damage * NuklearEdurance));
+		default:
+			break;
+			}
+		
 	}
 }
+
 

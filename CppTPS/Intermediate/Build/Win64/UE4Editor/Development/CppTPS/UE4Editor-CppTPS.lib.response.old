@@ -7,9 +7,11 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppLifeSystem.cpp.obj"
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPS.cpp.obj"
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPSCharacter.cpp.obj"
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPSGameMode.cpp.obj"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppLifeSystem.gen.cpp.obj"
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPS.init.gen.cpp.obj"
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPSCharacter.gen.cpp.obj"
 "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPSGameMode.gen.cpp.obj"

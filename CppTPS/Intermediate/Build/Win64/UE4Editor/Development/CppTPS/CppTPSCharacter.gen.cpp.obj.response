@@ -231,8 +231,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Inc\CppTPS"
-/I "C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Source"
+/I "C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Inc\CppTPS"
+/I "C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Source"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh
@@ -266,12 +266,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Inc\CppTPS\CppTPSCharacter.gen.cpp"
-/FI"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\Definitions.CppTPS.h"
-/Fo"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPSCharacter.gen.cpp.obj"
+/FI"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Inc\CppTPS\CppTPSCharacter.gen.cpp"
+/FI"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\Definitions.CppTPS.h"
+/Fo"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\CppTPSCharacter.gen.cpp.obj"
 /TP
 /GR-
 /W4

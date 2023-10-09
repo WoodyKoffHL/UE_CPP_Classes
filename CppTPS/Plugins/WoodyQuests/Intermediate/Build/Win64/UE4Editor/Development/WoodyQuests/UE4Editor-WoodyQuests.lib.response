@@ -6,8 +6,8 @@
 /NAME:"UE4Editor-WoodyQuests.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Module.WoodyQuests.cpp.obj"
-"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Module.WoodyQuests.gen.cpp.obj"
-"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Default.rc2.res"
-/OUT:"C:\Users\s.dronskiy\Documents\Unreal Projects\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\UE4Editor-WoodyQuests.lib"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\CppTPSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Module.WoodyQuests.cpp.obj"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Module.WoodyQuests.gen.cpp.obj"
+"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\Default.rc2.res"
+/OUT:"C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Plugins\WoodyQuests\Intermediate\Build\Win64\UE4Editor\Development\WoodyQuests\UE4Editor-WoodyQuests.lib"
