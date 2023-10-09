@@ -33,30 +33,52 @@ void UCppLifeSystem::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 void UCppLifeSystem::ApplyDamage(float Damage, EDamageType Type)
 {
-	if (Death) return;
-	if (Health - (Damage - (Damage * Edurance)) <= 0) {
-		Health = 0;
-		Death = true;
-	}
-	else {
-
+	if (isDead) return;
+	
 		switch (Type)
 			{
 		case EDamageType::bite:
-			Health = Health - (Damage - (Damage * Edurance));
+			if (Health - (Damage - (Damage * biteEdurance)) <= 0) {
+				Death();
+			}
+			Health = Health - (Damage - (Damage * biteEdurance));
 		case EDamageType::shot:
-			Health = Health - (Damage - (Damage * (Edurance / 2)));
+			if (Health - (Damage - (Damage * shotEdurance)) <= 0) {
+				Death();
+			}
+			Health = Health - (Damage - (Damage * shotEdurance));
 		case EDamageType::explosion:
-			Health = Health - Damage;
+			if (Health - (Damage - (Damage * explosionEdurance)) <= 0) {
+				Death();
+			}
+			Health = Health - (Damage - (Damage * explosionEdurance));
 		case EDamageType::fire:
-			Health = Health - (Damage - (Damage * Edurance / 3));
+			if (Health - (Damage - (Damage * fireEdurance)) <= 0) {
+				Death();
+			}
+			Health = Health - (Damage - (Damage * fireEdurance));
+		case EDamageType::cold:
+			if (Health - (Damage - (Damage * coldEdurance)) <= 0) {
+				Death();
+			}
+			Health = Health - (Damage - (Damage * coldEdurance));
 		case EDamageType::radiation:
+			if (Health - (Damage - (Damage * NuklearEdurance)) <= 0) {
+				Death();
+			}
 			Health = Health - (Damage - (Damage * NuklearEdurance));
 		default:
 			break;
 			}
 		
-	}
+	
+}
+
+void UCppLifeSystem::Death()
+{
+	Health = 0;
+	isDead = true;
+	OnDeath();
 }
 
 

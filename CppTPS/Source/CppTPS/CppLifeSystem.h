@@ -13,6 +13,7 @@ enum class EDamageType : uint8 {
 	shot,
 	explosion,
 	fire,
+	cold,
 	radiation
 };
 
@@ -30,12 +31,6 @@ public:
 
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
 	float Vitality = 0.0f; // Жизнеспособность - чем больше, тем меньше усталость
-
-	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
-	float Edurance = 0.0f; // Процент защиты
-
-	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
-	float NuklearEdurance = 0.0f; // Процент защиты от радиации
 	
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
 	float Thirst = 0.0f; // Жажда
@@ -47,10 +42,31 @@ public:
 	float Radiation = 0.0f; // Радиация
 
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
-	bool Death = true; // Смерть
+	bool isDead = true; // Смерть
 
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
 	bool Tired = true; // Усталость, временная bool, отключается через 15 секунд
+
+	// Переменные защиты от различного типа урона
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float biteEdurance = 0.0f; // Процент защиты от укуса
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float shotEdurance = 0.0f; // Процент защиты от выстрелов
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float explosionEdurance = 0.0f; // Процент защиты от взрыва
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float fireEdurance = 0.0f; // Процент защиты от жары и огня
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float coldEdurance = 0.0f; // Процент защиты от холода
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float NuklearEdurance = 0.0f; // Процент защиты от радиации
+
 
 protected:
 	// Called when the game starts
@@ -64,6 +80,9 @@ public:
 	void ApplyDamage(float Damage, EDamageType Type);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void OnDeath();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void SetStatus();
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
@@ -71,6 +90,6 @@ public:
 
 private:
 
-	
+	void Death();
 
 };
