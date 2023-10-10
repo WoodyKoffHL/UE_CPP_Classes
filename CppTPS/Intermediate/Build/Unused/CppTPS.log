@@ -4,10 +4,6 @@
   Using Visual Studio 2022 14.37.32822 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 12 processes...
     [1/4] CppLifeSystem.cpp
-    [2/4] UE4Editor-CppTPS.lib
-       Создается библиотека C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.lib и объект C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.exp
-    [3/4] UE4Editor-CppTPS.dll
-       Создается библиотека C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.suppressed.lib и объект C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Intermediate\Build\Win64\UE4Editor\Development\CppTPS\UE4Editor-CppTPS.suppressed.exp
-    [4/4] CppTPSEditor.target
-  Total time in Parallel executor: 11,79 seconds
-  Total execution time: 14,32 seconds
+C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Source\CppTPS\CppLifeSystem.cpp(79): error C4458: объявление "Tired" скрывает член класса
+    C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\Source\CppTPS\CppLifeSystem.h(48): note:  см. объявление "UCppLifeSystem::Tired"
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(44,5): error MSB3073: выход из команды "R:\Port\UE_4.27\Engine\Build\BatchFiles\Build.bat CppTPSEditor Win64 Development -Project="C:\Users\s.dronskiy\Documents\Unreal Projects\UE_CPP_Classes\CppTPS\CppTPS.uproject" -WaitMutex -FromMsBuild" с кодом 6.

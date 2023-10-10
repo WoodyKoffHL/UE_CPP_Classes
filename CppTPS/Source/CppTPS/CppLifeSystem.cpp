@@ -74,6 +74,23 @@ void UCppLifeSystem::ApplyDamage(float Damage, EDamageType Type)
 	
 }
 
+void UCppLifeSystem::Fatigue(bool Moving)
+{
+	float Tired = TiredRatio * 100;
+	if (Moving) {
+		Tired = Tired * -1;
+	}
+	float seconds = VitalityRatio;
+	if (Vitality <= 50.5f || Moving) {
+		seconds = seconds * 2;
+	}
+	else if (Vitality <= 10.1f || Moving) {
+		seconds = seconds * 4;
+	}
+	
+	FatigueCall(Tired, seconds);
+}
+
 void UCppLifeSystem::Death()
 {
 	Health = 0;

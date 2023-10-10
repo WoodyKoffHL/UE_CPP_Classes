@@ -17,15 +17,22 @@ enum class EDamageType : uint8;
 #define CppTPS_Source_CppTPS_CppLifeSystem_h_23_SPARSE_DATA
 #define CppTPS_Source_CppTPS_CppLifeSystem_h_23_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execFatigue); \
 	DECLARE_FUNCTION(execApplyDamage);
 
 
 #define CppTPS_Source_CppTPS_CppLifeSystem_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execFatigue); \
 	DECLARE_FUNCTION(execApplyDamage);
 
 
 #define CppTPS_Source_CppTPS_CppLifeSystem_h_23_EVENT_PARMS \
+	struct CppLifeSystem_eventFatigueCall_Parms \
+	{ \
+		float Value; \
+		float Seconds; \
+	}; \
 	struct CppLifeSystem_eventTickStatus_Parms \
 	{ \
 		float DeltaTime; \

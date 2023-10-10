@@ -79,6 +79,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ApplyDamage(float Damage, EDamageType Type);
 
+
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void OnDeath();
 
@@ -87,6 +88,21 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void TickStatus(float DeltaTime);
+
+	///////////////////////////////////////////////////////////
+	// 091123
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float VitalityRatio = 1.0f; // Коэффициент затраты жизнеспособности (Усталость) в секундах (0 - 10)
+
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Stats")
+	float TiredRatio = 1.0f; // Коэффициент затраты жизнеспособности (Усталость) в значение (0 - 1)
+
+
+	UFUNCTION(BlueprintCallable)
+	void Fatigue(bool Moving); // Утомпление
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void FatigueCall(float Value, float Seconds); // Вызов в Блюпринтах
 
 private:
 
