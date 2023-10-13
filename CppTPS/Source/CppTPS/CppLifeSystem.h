@@ -17,6 +17,15 @@ enum class EDamageType : uint8 {
 	radiation
 };
 
+UENUM(BlueprintType)
+enum class EStatisType : uint8 {
+	Health,
+	Vitality,
+	Thirst,
+	Hunger,
+	Radiation
+};
+
 UCLASS(Blueprintable, BlueprintType,ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class CPPTPS_API UCppLifeSystem : public UActorComponent
 {
@@ -103,6 +112,9 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void FatigueCall(float Value, float Seconds); // Вызов в Блюпринтах
+
+	UFUNCTION(BlueprintCallable)
+	bool AddStat(float Value, EStatisType Type); // Прибавитm Статистику
 
 private:
 
